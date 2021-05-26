@@ -1,0 +1,47 @@
+<section class="mt-5 ml-5">
+    <h6 class="text-muted ml-5 my-4">VISIT OUR BLOG</h6>
+    <div class="row mt-4 d-flex flex-column flex-sm-row justify-content-around align-items-center mr-5">
+      <a class="mb-3" href="#" *ngFor="let i of imgPublicidad"><img class="tramontanaImg" [src]="i.img" alt="mtn-world-logo"></a>
+      <button class="btn btn-dark rounded-0 px-3">SUSCRIBE TO OUR NEWSLETTER</button>
+    </div>
+  </section>
+  <div class="f-top">
+    <div class="row">
+      <div class="col-12 mb-2 col-md-3 d-flex justify-content-center align-items-center">
+        <img class="mtn-logo" src="../../../assets/img/footer/mtn-completo.png" alt="MTN LOGO">
+      </div>
+      <div class="d-none col-3 d-md-flex flex-column">
+       <span class="my-2" *ngFor="let i of column1"><a class="font-weight-bold" href="">{{i.a}}</a></span>
+      </div>
+      <div class="d-none col-3  d-md-flex flex-column">
+       <span class="my-2" *ngFor="let i of column2"><a class="font-weight-bold" href="">{{i.a}}</a></span>
+      </div>
+      <div class="col-12 col-md-3 text-center text-md-left">
+        <div>
+         <p class="p-top m-0">ONLINE SALE INDIVIDUALS</p>
+         <a class="a-mid" href="">SPRAYPLANET.ES</a>
+         <p class="p-bottom">Exclusively for Spain and Portugal</p>
+        </div>
+        <div>
+         <p class="p-top m-0">ACCESS TO OUR PRO SITE</p>
+         <a class="a-mid" href="">MTN B2B ></a>
+         <p class="p-bottom">Reseller information</p>
+        </div>
+      </div>
+    </div>
+    <div class="row ml-1">
+      <div class="d-flex justify-content-end  justify-md-content-start">
+        <span *ngFor="let i of imgPagos"><img class="logos-pago" [src]="i.img" alt=""></span>
+      </div>
+    </div>
+  </div>
+<div class="row p-4 legalDisclaimer-cookies">
+  <div class="">
+    <span class="d-none ml-4 d-sm-flex">MONTANA COLORS S.L. · Pl. Clot del Tufau 4, 08295, Sant Vicen de Castellet, Barcelona, Spain · : (+34) 93 833 27 87 · montana@montanacolors.com
+    </span>
+  </div>
+  <div class="mx-auto mt-2">
+    <a class="" href="">Legal Disclaimer</a>
+    <a class="ml-3" href="">Cookies</a>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+.opacityDiv .col-4 img{
+    transition: 300ms;
+}
+.opacityDiv .col-4:hover img{
+    cursor: pointer;
+    opacity: 0.4;
+}
+.opacityDiv .col:hover .description{
+    color: black;
+
+}
+.description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}

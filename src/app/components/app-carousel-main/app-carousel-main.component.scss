@@ -1,0 +1,22 @@
+/* Carousel */
+.carousel-item {
+    max-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.oneCaption{
+    width: 500px;
+    transform: translateX(-20%);
+    bottom: 0;
+    top: 10%;
+}
+.oneCaption h1{
+    font-size: 5em;
+}
+.oneCaption h4{
+    font-size: 1.7em;
+}
+.head{
+    border-bottom: 2px solid white;
+}

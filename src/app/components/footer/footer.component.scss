@@ -1,0 +1,57 @@
+a{
+	text-decoration:none;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+a:hover{
+    color: gray;
+}
+.f-top{
+    background-image: url("../../../assets/img/bg_footer.png");
+    background-size: cover;
+    background-position: top center;
+    padding: 86px 25px 38px;
+}
+footer .row:nth-child(1) a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+footer .row:nth-child(1) a:hover{
+    color: gray;
+    opacity: 1
+}
+.p-top{
+    color: white;
+    font-weight: bold;
+}
+.a-mid{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.p-bottom{
+    color: white;
+}
+.logos-pago{
+    max-height: 35px;
+    min-width: 60px;
+}
+.mtn-logo{
+    height: 100%;
+    margin-bottom: 5%;
+}
+.legalDisclaimer-cookies{
+    background-color: black;
+    color: white;
+}
+.legalDisclaimer-cookies a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.legalDisclaimer-cookies a:hover{
+    text-decoration: none;
+    color: gray;
+    opacity: 1
+}

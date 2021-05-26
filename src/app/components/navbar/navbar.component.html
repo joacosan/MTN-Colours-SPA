@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light p-0 bg-light">
+    <a class="navbar-brand ml-4" href="index.html"><span><img class="logo" src="../../../assets/img/logo.svg" alt=""></span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center mx-auto">
+        <li class="nav-item mx-2 active" *ngFor="let i of dataNav">
+          <a class="nav-link py-3 link-spray font-weight-bold" href="spray.html">{{i.a}}</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 mr-2 my-lg-0">
+        <input class="form-control w-75 m-auto" type="search" placeholder="Buscar: " aria-label="Search">
+        <button class="search btn btn-outline-orange my-2 my-sm-0" type="submit"><span><i class="fas fa-search"></i></span></button>
+      </form>
+    </div>
+  </nav>
