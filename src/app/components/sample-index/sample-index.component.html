@@ -1,28 +1,10 @@
 <div class="row">
     <div class="d-flex opacityDiv">
-      <div class="col-4 col-md-3">
-       <img class="w-100 img-fluid" [src]="url.img1" alt="graffiti">
+      <div class="col-4 col-md-3" *ngFor="let i of dataSample">
+       <img class="w-100 img-fluid" [src]="i.img" alt="sample">
        <div class="row justify-content-center">
-         <h3 class="description">{{title.graffiti}}</h3>
+         <h3 class="description">{{i.title}}</h3>
        </div>
-      </div>
-      <div class="col-4 col-md-3">
-        <img class="w-100" [src]="url.img2" alt="murals">
-        <div class="row justify-content-center">
-          <h3 class="description">{{title.murals}}</h3>
-        </div>
-      </div>
-      <div class="col-4 col-md-3">
-        <img class="w-100" [src]="url.img3" alt="fine Art">
-        <div class="row justify-content-center">
-          <h3 class="description">{{title.fineArt}}</h3>
-        </div>
-      </div>
-      <div class="col-4 col-md-3">
-        <img class="w-100" [src]="url.img4" alt="other">
-        <div class="row justify-content-center">
-          <h3 class="description">{{title.other}}</h3>
-        </div>
       </div>
     </div>
   </div>

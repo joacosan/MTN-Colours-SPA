@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+
   imgPublicidad:any[]=[
     {img:"../../../assets/img/footer/mtnworldlogo.svg"},
     {img:"../../../assets/img/footer/keeptheplanet.svg"},
@@ -24,6 +25,10 @@ export class FooterComponent implements OnInit {
     {a:"INFORMATION"},
     {a:"COOKIES POLICY"},
     {a:"CONTACT"}
+  ]
+  column3:any[]=[
+    {pTop:"ONLINE SALE INDIVIDUALS",a:"SPRAYPLANET.ES",pBottom:"Exclusively for Spain and Portugal"},
+    {pTop:"ACCESS TO OUR PRO SITE",a:"MTN B2B > ",pBottom:"Reseller information"},
   ]
   imgPagos:any[]=[
     {img:"../../../assets/img/footer/apay.svg"},

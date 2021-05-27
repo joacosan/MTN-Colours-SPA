@@ -1,15 +1,17 @@
-.slider{
-    height: 70vh;
+.main{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
-.inner{
-    height: 85vh;
-
+.sectionGraffitiMd{
+    height: 50vh;
 }
 .i-slider{
-    max-height: 60vh;
+    max-height: 60%;
 }
 .img-sm-carousel{
-    height: 50vh;
+    height: 50%;
     object-fit:contain;
 }
 .carousel-control-next i, .carousel-control-prev i{
@@ -40,3 +42,8 @@
     cursor: pointer;
     opacity: 0.4;
 }
+@media only screen and (min-width: 800px) {
+    .sectionGraffitiMd{
+        height: 69vh;
+    }
+  }

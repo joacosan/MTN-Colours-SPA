@@ -1,14 +1,16 @@
+
 .h1Spray{
     font-size: 4.5rem;
     font-weight: bold;
-
 }
 .l-none{
     list-style: none;
     text-decoration: none;
-    font-size: 3.5vh
+    font-size: 3.3vh
 }
 .l-none button{
+    border: 2px solid #dddd;
+    border-collapse: collapse;
     background-color: white;
     border: none;
     color: black;

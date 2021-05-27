@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buttons.component.scss']
 })
 export class ButtonsComponent implements OnInit {
-  rutas: string[] = ['Graffiti & Fine Art', 'Caps','PRO','Edicion Limitada' ];
+  rutas: string[] = [
+      'Graffiti & Fine Art',
+      'Caps',
+      'PRO',
+      'Edicion Limitada',
+    ];
   constructor() { }
 
   ngOnInit(): void {

@@ -10,6 +10,7 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { CarouselMultiItemShopComponent } from './components/carousel-multi-item-shop/carousel-multi-item-shop.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ButtonsComponent,
     CarouselMultiItemShopComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

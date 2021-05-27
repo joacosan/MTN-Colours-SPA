@@ -1,23 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataSample } from './dataSample'
 @Component({
   selector: 'app-sample-index',
   templateUrl: './sample-index.component.html',
   styleUrls: ['./sample-index.component.scss']
 })
 export class SampleIndexComponent implements OnInit {
-  url ={
-    "img1": "../../assets/img/graffiti.jpg",
-    "img2": "../../assets/img/murals.jpg",
-    "img3": "../../assets/img/fineArt.jpg",
-    "img4": "../../assets/img/other.jpg"
-  }
-  title={
-    "graffiti":"Graffiti",
-    "murals":"Murals",
-    "fineArt":"Fine Art",
-    "other":"Others"
-  }
+  dataSample:DataSample[]=[
+    {img:'../../assets/img/graffiti.jpg',title:'Graffiti',},
+    {img:'../../assets/img/murals.jpg',title:'Murals',},
+    {img:'../../assets/img/fineArt.jpg',title:'Fine Art',},
+    {img:'../../assets/img/other.jpg',title:'Others',},
+  ]
 
   constructor() { }
 

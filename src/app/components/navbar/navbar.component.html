@@ -5,8 +5,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav text-center mx-auto">
-        <li class="nav-item mx-2 active" *ngFor="let i of dataNav">
-          <a class="nav-link py-3 link-spray font-weight-bold" href="spray.html">{{i.a}}</a>
+        <li class="nav-item mx-2 active" *ngFor="let i of dataNav" >
+          <a class="nav-link py-3 link-spray font-weight-bold pb-2" [ngClass]="{'link-markers': i.classLink == 'markers&refills','link-accessories': i.classLink == 'accessories','link-distribution': i.classLink == 'distribution','link-store': i.classLink == 'online'}">{{i.nameLink}}</a>
         </li>
       </ul>
       <form class="form-inline my-2 mr-2 my-lg-0">

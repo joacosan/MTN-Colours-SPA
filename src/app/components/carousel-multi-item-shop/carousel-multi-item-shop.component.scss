@@ -1,12 +1,11 @@
-.slider{
+.main{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.sectionOnlineShopMd{
     height: 70vh;
-}
-.inner{
-    height: 85vh;
-
-}
-.i-slider{
-    max-height: 60vh;
 }
 .img-sm-carousel{
     height: 50vh;

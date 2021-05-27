@@ -1,4 +1,5 @@
-<section class="mt-5 ml-5">
+<div class="footer">
+  <section class="mt-5 ml-5">
     <h6 class="text-muted ml-5 my-4">VISIT OUR BLOG</h6>
     <div class="row mt-4 d-flex flex-column flex-sm-row justify-content-around align-items-center mr-5">
       <a class="mb-3" href="#" *ngFor="let i of imgPublicidad"><img class="tramontanaImg" [src]="i.img" alt="mtn-world-logo"></a>
@@ -17,15 +18,10 @@
        <span class="my-2" *ngFor="let i of column2"><a class="font-weight-bold" href="">{{i.a}}</a></span>
       </div>
       <div class="col-12 col-md-3 text-center text-md-left">
-        <div>
-         <p class="p-top m-0">ONLINE SALE INDIVIDUALS</p>
-         <a class="a-mid" href="">SPRAYPLANET.ES</a>
-         <p class="p-bottom">Exclusively for Spain and Portugal</p>
-        </div>
-        <div>
-         <p class="p-top m-0">ACCESS TO OUR PRO SITE</p>
-         <a class="a-mid" href="">MTN B2B ></a>
-         <p class="p-bottom">Reseller information</p>
+        <div *ngFor="let i of column3">
+         <p class="p-top m-0">{{i.pTop}}</p>
+         <a class="a-mid" href="">{{i.a}}</a>
+         <p class="p-bottom">{{i.pBottom}}</p>
         </div>
       </div>
     </div>
@@ -44,4 +40,5 @@
     <a class="" href="">Legal Disclaimer</a>
     <a class="ml-3" href="">Cookies</a>
   </div>
+</div>
 </div>
