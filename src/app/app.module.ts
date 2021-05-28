@@ -11,6 +11,8 @@ import { CarouselMultiItemShopComponent } from './components/carousel-multi-item
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsComponent } from './components/news/news.component';
+import { CarouselMultiItemCapsComponent } from './components/carousel-multi-item-caps/carousel-multi-item-caps.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { NewsComponent } from './components/news/news.component';
     CarouselMultiItemShopComponent,
     NavbarComponent,
     FooterComponent,
-    NewsComponent
+    NewsComponent,
+    CarouselMultiItemCapsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

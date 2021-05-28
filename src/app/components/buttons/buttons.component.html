@@ -4,11 +4,16 @@
     </div>
     <div class="col">
       <ul class="d-flex">
-        <li class="mx-3 l-none mt-5" *ngFor="let i of rutas">
-          <button class="btnGraffiti" href="#">
-            {{i}}
-          </button>
+        <li class="mx-3 l-none mt-5" *ngFor="let button of buttons">
+          <button class="btnn" [ngClass]="{'btnGraffiti': button.btn == 'Graffiti & Fine Art','btnCaps': button.btn == 'Caps'}" href="#" (click)="changeDisplay(button)">{{button.btn}}</button>
         </li>
       </ul>
     </div>
   </div>
+  <div class="carouselGraffiti">
+    <app-carousel-multi-item-graffiti></app-carousel-multi-item-graffiti>
+  </div>
+  <div class="carouselCaps">
+    <app-carousel-multi-item-caps></app-carousel-multi-item-caps>
+  </div>
+  
