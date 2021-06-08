@@ -34,13 +34,14 @@
 }
 .link-store{
     background-color: #1ABC9C;
-    color: white;
+    color: white!important;
     border-bottom: 4px solid #1ABC9C;
 }
 .link-store:hover{
     color: #1ABC9C!important;
     border-bottom: 4px solid #1ABC9C;
     background-color: #F8F9FA;
+    font-weight: bold;
 }
 .search{
     transition: 0.3s;

@@ -5,8 +5,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav text-center mx-auto">
-        <li class="nav-item mx-2 active" *ngFor="let i of dataNav" >
-          <a class="nav-link py-3 link-spray font-weight-bold pb-2" [ngClass]="{'link-markers': i.classLink == 'markers&refills','link-accessories': i.classLink == 'accessories','link-distribution': i.classLink == 'distribution','link-store': i.classLink == 'online'}">{{i.nameLink}}</a>
+        <li class="nav-item mx-2 active">
+          <a class="nav-link py-3 link-spray font-weight-bold pb-2" [routerLink]="['/spray']">{{dataLink[0].nameLink}}</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 link-markers font-weight-bold pb-2" [routerLink]="['/markers&refills']">{{dataLink[1].nameLink}}</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 link-accessories font-weight-bold pb-2" [routerLink]="['/accessories']">{{dataLink[2].nameLink}}</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 link-distribution font-weight-bold pb-2" [routerLink]="['/distribution']">{{dataLink[3].nameLink}}</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link py-3 link-store font-weight-bold pb-2" [routerLink]="['/store']">{{dataLink[4].nameLink}}</a>
         </li>
       </ul>
       <form class="form-inline my-2 mr-2 my-lg-0">

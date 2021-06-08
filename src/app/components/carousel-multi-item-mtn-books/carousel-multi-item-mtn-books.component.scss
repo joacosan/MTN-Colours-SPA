@@ -1,0 +1,49 @@
+#books{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.sectionBooksMd{
+    height: 50vh;
+}
+.i-slider{
+    max-height: 60%;
+}
+.img-sm-carousel{
+    height: 50%;
+    object-fit:contain;
+}
+.carousel-control-next i, .carousel-control-prev i{
+   color: black;
+}
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+.caption{
+    position: absolute;
+    top: 95%;
+    text-align: start !important;
+}
+.carousel-caption p {
+    font-size: 16px;
+    color: gray;
+}
+.img-hover{
+    transition: 300ms;
+}
+.img-hover:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+@media only screen and (min-width: 800px) {
+    .sectionBooksMd{
+        height: 69vh;
+    }
+  }

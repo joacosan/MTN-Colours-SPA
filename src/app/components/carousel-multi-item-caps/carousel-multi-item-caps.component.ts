@@ -7,21 +7,9 @@ import { CarouselData } from './carouselData';
 })
 export class CarouselMultiItemCapsComponent implements OnInit {
   carouselItem:CarouselData[]=[
-    {
-      img:'../../../assets/img/carouselCaps/c21.jpg',
-      h4Data:'MTN CAPS',
-      pData: 'Complete MTN Cap Range',
-    },
-    {
-      img:'../../../assets/img/carouselCaps/c22.jpg',
-      h4Data:'BUCKETS',
-      pData: '120 Unit Buckets',
-    },
-    {
-      img:'../../../assets/img/carouselCaps/c23.jpg',
-      h4Data:'MTN CAP PACKS',
-      pData: '5 Unit Packs',
-    },
+    {img:'../../../assets/img/carouselCaps/c21.jpg',h4Data:'MTN CAPS',pData: 'Complete MTN Cap Range',active:true,},
+    {img:'../../../assets/img/carouselCaps/c22.jpg',h4Data:'BUCKETS',pData: '120 Unit Buckets',active:false,},
+    {img:'../../../assets/img/carouselCaps/c23.jpg',h4Data:'MTN CAP PACKS',pData: '5 Unit Packs',active:false,},
   ]
   constructor() { }
 

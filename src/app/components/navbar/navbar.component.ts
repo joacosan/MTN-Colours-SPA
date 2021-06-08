@@ -6,30 +6,23 @@ import {Nav} from './navbar';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  
-  dataNav:Nav[]=[
+  dataLink:any[]=[
     {
-      nameLink: 'Spray',
-      classLink:'spray'
+      nameLink:'Spray',
     },
     {
-      nameLink: 'Markers & Refills',
-      classLink:'markers&refills'
+      nameLink:'Markers & Refills',
     },
     {
-      nameLink: 'Accessories',
-      classLink:'accessories'
+      nameLink:'Accessories',
     },
     {
-      nameLink: 'Distribution',
-      classLink:'distribution'
+      nameLink:'Distribution',
     },
     {
-      nameLink: 'ONLINE STORE',
-      classLink:'online'
-    }
+      nameLink:'ONLINE STORE',
+    },
   ]
-
   constructor() { }
 
   ngOnInit(): void {

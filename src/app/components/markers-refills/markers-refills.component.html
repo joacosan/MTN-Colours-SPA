@@ -1,0 +1,85 @@
+ <!--  BACK TO HOME // SHARE  -->
+ <section>
+    <div class="row mt-3">
+        <div class="col d-flex justify-content-start ml-5 mt-3">
+            <a class="linkViewMore font-weight-bold" [routerLink]="['/home']" ><span class=""><i class="fas fa-chevron-left"></i><span class="ml-2 mr-3">Home</span></span></a>
+            <p class="font-weight-bold">| <span class="ml-1">Markers & Refills</span></p>
+        </div>
+        <div class="col d-flex justify-content-end mr-5 mt-3">
+          <span class="font-weight-bold text-center">Share: </span>
+            <ul class="list d-flex">
+                <li class="mx-2" *ngFor="let icon of icons">
+                    <a><img [src]="icon.icon" [ngClass]="{'fab fa-facebook-f':icon.icon === 'fb','fab fa-twitter-square':icon.icon==='tw','fas fa-envelope':icon.icon==='mail','fab fa-linkedin-in':icon.icon ==='in'}"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  SEE ALL -->
+    <div class="row mt-1">
+        <div class="col ml-5 text-left">
+            <h1 class="h1Spray">Markers & Refills</h1>
+        </div>
+    </div>
+    <div class="carouseles">
+        <!--  TITLE  -->
+        <div class="row">
+            <div class="col ml-5 mt-4">
+                <p class="subtitleProducts ml-3">Markers & Dabbers</p>
+            </div>
+            <div class="col d-flex text-right mt-4 justify-content-end mr-3">
+                <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
+            </div>
+        </div>
+        <div class="mb-5">
+            <app-carousel-multi-item-markers></app-carousel-multi-item-markers>
+        </div>
+        <!--  TITLE  -->
+        <div class="row">
+            <div class="col ml-5 mt-4">
+                <p class="subtitleProducts ml-3">Empty</p>
+            </div>
+            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
+                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
+            </div>
+        </div>
+        <div class="mb-2">
+            <app-carousel-multi-item-empty></app-carousel-multi-item-empty>
+        </div>
+        <!--  TITLE  -->
+        <div class="row">
+            <div class="col ml-5 mt-4">
+                <p class="subtitleProducts ml-3">Packs</p>
+            </div>
+            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
+                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
+            </div>
+        </div>
+        <div class="mb-2">
+            <app-carousel-multi-item-packs></app-carousel-multi-item-packs>
+        </div>
+        <!--  TITLE  -->
+        <div class="row">
+            <div class="col ml-5 mt-4">
+                <p class="subtitleProducts ml-3">Refills</p>
+            </div>
+            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
+                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
+            </div>
+        </div>
+        <div class="mb-2">
+            <app-carousel-multi-item-refills></app-carousel-multi-item-refills>
+        </div>
+        <!--  TITLE  -->
+        <div class="row">
+            <div class="col ml-5 mt-4">
+                <p class="subtitleProducts ml-3">Tips</p>
+            </div>
+            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
+                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
+            </div>
+        </div>
+        <div class="mb-2">
+            <app-carousel-multi-item-tips></app-carousel-multi-item-tips>
+        </div>
+    </div>
+</section>

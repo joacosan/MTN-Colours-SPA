@@ -3,9 +3,7 @@
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-}
-.sectionCapsMd{
-    height: 50vh;
+    height: 73vh;
 }
 .i-slider{
     max-height: 60%;
@@ -42,8 +40,8 @@
     cursor: pointer;
     opacity: 0.4;
 }
-@media only screen and (min-width: 800px) {
-    .sectionGraffitiMd{
-        height: 69vh;
+  @media only screen and (max-width: 769px) {
+    .main{
+        height: 95vh;
     }
   }

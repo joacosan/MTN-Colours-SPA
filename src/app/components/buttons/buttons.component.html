@@ -4,16 +4,32 @@
     </div>
     <div class="col">
       <ul class="d-flex">
-        <li class="mx-3 l-none mt-5" *ngFor="let button of buttons">
-          <button class="btnn" [ngClass]="{'btnGraffiti': button.btn == 'Graffiti & Fine Art','btnCaps': button.btn == 'Caps'}" href="#" (click)="changeDisplay(button)">{{button.btn}}</button>
+        <li class="mx-3 l-none mt-5" >
+          <button class="" (click)="showGraffiti()">Graffiti & Fine Art</button>
+        </li>
+        <li class="mx-3 l-none mt-5">
+          <button class="" (click)="showCaps()">Caps</button>
+        </li>
+        <li class="mx-3 l-none mt-5">
+          <button class="" (click)="showPro()">Pro</button>
+        </li>
+        <li class="mx-3 l-none mt-5">
+          <button class="" (click)="showLE()">Limited Edition</button>
         </li>
       </ul>
     </div>
   </div>
-  <div class="carouselGraffiti">
-    <app-carousel-multi-item-graffiti></app-carousel-multi-item-graffiti>
+  <div>
+    <div class="carouselGraffiti" *ngIf="isShowGraf">
+      <app-carousel-multi-item-graffiti></app-carousel-multi-item-graffiti>
+    </div>
+    <div class="carouselCaps" *ngIf="isShowCaps">
+      <app-carousel-multi-item-caps></app-carousel-multi-item-caps>
+    </div>
+    <div class="carouselPro" *ngIf="isShowPro">
+      <app-carousel-multi-item-pro></app-carousel-multi-item-pro>
+    </div>
+    <div class="carouselPro" *ngIf="isShowLE">
+      <app-carousel-multi-item-le></app-carousel-multi-item-le>
+    </div>
   </div>
-  <div class="carouselCaps">
-    <app-carousel-multi-item-caps></app-carousel-multi-item-caps>
-  </div>
-  

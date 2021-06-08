@@ -1,50 +1,12 @@
-<!-- * * * * * * * * * * * * NAVBAR * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * *  NAVBAR  * * * * * * * * * * * * * * * * -->
 <header>
   <app-navbar></app-navbar>
 </header>
-    <!-- * * * * * * * * * * * MAIN SLIDER * * * * * * * * * * * * * * * * -->
-    <div>
-      <app-carousel-main></app-carousel-main>
-    </div>
-<main>
-    <!-- * * * * * * * * * * * SAMPLE INDEX * * * * * * * * * * * * * * * * -->
-      <div class="mt-4 mr-5">
-        <app-sample-index></app-sample-index>
-      </div>
-      <!-- * * * * * * * * * * * VER TODOS* * * * * * * * * * * * * * * * -->
-      <div class="row mt-3">
-        <div class="col ml-4">
-          <p class="subtitleProducts ml-3">Montana Colors Spray Paint Products</p>
-        </div>
-        <div class="col d-flex text-right justify-content-end mr-3">
-          <a class="linkViewMore" href="graffiti.html"><span>Ver Todo <i class="fas fa-arrow-circle-right"></i></span></a>
-        </div>
-      </div>
-      <!-- * * * * * * * * * * * BUTTON * * * * * * * * * * * * * * * * -->
-      <section class="ml-4">
-        <app-buttons></app-buttons>
-      </section>
-      <!-- * * * * * * * * * * * GRAFFITI SECTION * * * * * * * * * * * * * * * * -->
-      <section class="mb-5">
-        
-      </section>
-      <!--------------------SECTION ONLINE SHOP----------------------------->
-      <section class="onlineShop ml-5">
-        <div class="row mb-1">
-          <div class="col">
-            <h4 class=" text-muted ml-3">Montana Colors Products</h4>
-            <h1 class="h1Spray ml-3">Online Shop</h1>
-          </div>
-        </div>
-      </section>
-      <!-- * * * * * * * * * * * CAROUSEL ONLINE SHOP * * * * * * * * * * * * * * * * -->
-      <section>
-        <app-carousel-multi-item-shop></app-carousel-multi-item-shop>
-      </section>
-      <!-- * * * * * * * * * * * CAROUSEL ONLINE SHOP * * * * * * * * * * * * * * * * -->
-      <app-news></app-news>
-</main>
-    <!-- Footer -->
+<!-- * * * * * * * * * * * *  HOME  * * * * * * * * * * * * * * * * -->
+<div>
+  <router-outlet></router-outlet>
+</div>
+<!-- * * * * * * * * * * * *  FOOTER  * * * * * * * * * * * * * * * * -->
 <footer>
     <app-footer></app-footer>
 </footer>
