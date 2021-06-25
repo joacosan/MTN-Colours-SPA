@@ -31,6 +31,10 @@ import { CarouselMultiItemMerchandiseComponent } from './components/carousel-mul
 import { CarouselMultiItemProtectionComponent } from './components/carousel-multi-item-protection/carousel-multi-item-protection.component';
 import { CarouselMultiItemMtnBooksComponent } from './components/carousel-multi-item-mtn-books/carousel-multi-item-mtn-books.component';
 import { CarouselMultiItemSpecialComponent } from './components/carousel-multi-item-special/carousel-multi-item-special.component';
+import { SprayListComponent } from './components/spray-list/spray-list.component';
+import { InputIntegerComponent } from './components/input-integer/input-integer.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CarouselMultiItemComponent } from './components/carousel-multi-item/carousel-multi-item.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +65,11 @@ import { CarouselMultiItemSpecialComponent } from './components/carousel-multi-i
     CarouselMultiItemMerchandiseComponent,
     CarouselMultiItemProtectionComponent,
     CarouselMultiItemMtnBooksComponent,
-    CarouselMultiItemSpecialComponent
+    CarouselMultiItemSpecialComponent,
+    SprayListComponent,
+    InputIntegerComponent,
+    CartComponent,
+    CarouselMultiItemComponent
   ],
   imports: [
     BrowserModule,

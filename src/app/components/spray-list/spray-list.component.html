@@ -1,0 +1,31 @@
+<section>
+    <table class="table table-striped">
+        <thead>
+            <th class="img"></th>
+            <th></th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Amount</th>
+            <th>Buy</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let spray of list">
+                <div *ngIf="spray.clearance" class="ribbon ribbon-top-right"><span>offer</span></div>
+                <div class="tr"><span></span></div>
+                <td class="img"><img width="90" class="img-thumbnail img" [src]="spray.img" [alt]=""></td>
+                <td>{{spray.name}}</td>
+                <td>{{spray.type}}</td>
+                <td>{{spray.price | currency}}</td>
+                <td><span class="badge badge-warning" *ngIf="spray.stock == 0">SIN STOCK</span><span class="badge badge-success" *ngIf="spray.stock > 0">STOCK</span></td>
+                <td>
+                   <app-input-integer [(quantity)]="spray.quantity" [max]="spray.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-sm" (click)="addToCart(spray)">Add to Cart</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

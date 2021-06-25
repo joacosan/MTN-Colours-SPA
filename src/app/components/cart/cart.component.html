@@ -1,0 +1,25 @@
+<section>
+    <table class="table table-striped">
+        <thead>
+            <th class="img"></th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of cartList">
+                <td class="img"><img width="90" class="img-thumbnail img" [src]="product.img" [alt]=""></td>
+                <td>{{product.name}}</td>
+                <td>{{product.type}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price | currency}}</td>
+                <td>
+                    <button class="btn btn-primary btn-sm" (click)="deleteToCart(product)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<button class="btn btn-primary">Buy</button>

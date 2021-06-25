@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
       nameLink:'Spray',
     },
     {
-      nameLink:'Markers & Refills',
+      nameLink:'Markers',
     },
     {
       nameLink:'Accessories',
@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
       nameLink:'Distribution',
     },
     {
-      nameLink:'ONLINE STORE',
+      nameLink:'STORE',
     },
   ]
   constructor() { }

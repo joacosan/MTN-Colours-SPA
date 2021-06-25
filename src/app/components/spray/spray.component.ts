@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Icons } from './spray';
+import {dataU} from '../carousel-multi-item/dataCarouseles.js'
 @Component({
   selector: 'app-spray',
   templateUrl: './spray.component.html',
@@ -19,9 +20,12 @@ export class SprayComponent implements OnInit {
     {
      icon: '../../../assets/img/in.svg',
     }
-
   ]
-  constructor() { }
+  data = []
+  constructor() {
+    this.data = dataU;
+    console.log(this.data);
+   }
 
   ngOnInit(): void {
   }

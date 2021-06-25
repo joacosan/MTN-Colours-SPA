@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselData } from './carouselData';
+
 @Component({
   selector: 'app-carousel-multi-item-caps',
   templateUrl: './carousel-multi-item-caps.component.html',
