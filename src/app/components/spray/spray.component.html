@@ -20,7 +20,7 @@
             <h1 class="h1Spray">Spray Paint Products</h1>
         </div>
     </div>
-    <div class="carouseles"*ngFor="let i of data">
+    <div class="carouseles"*ngFor="let i of data;index as j">
         <!--  TITLE  -->
         <div class="row" >
             <div class="col ml-5 mt-5">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="mb-5">
-            <app-carousel-multi-item [data]="i.data"></app-carousel-multi-item>
+            <app-carousel-multi-item [data]="i.data[j]"></app-carousel-multi-item>
         </div>
     </div>
 </section>
