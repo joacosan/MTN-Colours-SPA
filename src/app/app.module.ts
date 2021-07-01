@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { AppCarouselMainComponent } from './components/app-carousel-main/app-carousel-main.component';
 import { SampleIndexComponent } from './components/sample-index/sample-index.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
-import { CarouselMultiItemShopComponent } from './components/carousel-multi-item-shop/carousel-multi-item-shop.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsComponent } from './components/news/news.component';
@@ -19,12 +18,10 @@ import { MarkersRefillsComponent } from './components/markers-refills/markers-re
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { DistributionComponent } from './components/distribution/distribution.component';
 import { StoreComponent } from './components/store/store.component';
-import { CarouselMultiItemMarkersComponent } from './components/carousel-multi-item-markers/carousel-multi-item-markers.component';
 import { SprayListComponent } from './components/spray-list/spray-list.component';
 import { InputIntegerComponent } from './components/input-integer/input-integer.component';
 import { CartComponent } from './components/cart/cart.component';
-import { CarouselMultiItemComponent } from './components/carousel-multi-item-spray/carousel-multi-item.component';
-import { CarouselMultiItemAccesoriesComponent } from './components/carousel-multi-item-accesories/carousel-multi-item-accesories.component';
+import { CarouselMultiItemComponent } from './components/carousel-multi-item/carousel-multi-item.component';
 
 
 @NgModule({
@@ -33,7 +30,6 @@ import { CarouselMultiItemAccesoriesComponent } from './components/carousel-mult
     AppCarouselMainComponent,
     SampleIndexComponent,
     ButtonsComponent,
-    CarouselMultiItemShopComponent,
     NavbarComponent,
     FooterComponent,
     NewsComponent,
@@ -43,12 +39,10 @@ import { CarouselMultiItemAccesoriesComponent } from './components/carousel-mult
     AccessoriesComponent,
     DistributionComponent,
     StoreComponent,
-    CarouselMultiItemMarkersComponent,
     SprayListComponent,
     InputIntegerComponent,
     CartComponent,
     CarouselMultiItemComponent,
-    CarouselMultiItemAccesoriesComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { Buttons } from './buttons';
-import {dataU, getDataById} from '../carousel-multi-item-spray/dataCarouseles.js';
+import {dataU, getDataById} from '../carousel-multi-item/dataCarouseles.js';
 
 @Component({
   selector: 'app-buttons',

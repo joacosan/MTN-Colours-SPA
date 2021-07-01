@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Icons } from './icons';
-import {dataAccesories} from '../carousel-multi-item-spray/dataCarouseles.js';
+import {dataAccesories} from '../carousel-multi-item/dataCarouseles.js';
 @Component({
   selector: 'app-accessories',
   templateUrl: './accessories.component.html',

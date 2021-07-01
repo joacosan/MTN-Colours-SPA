@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Icons} from './icons';
-import {dataMarkers} from '../carousel-multi-item-spray/dataCarouseles.js';
+import {dataMarkers} from '../carousel-multi-item/dataCarouseles.js';
 @Component({
   selector: 'app-markers-refills',
   templateUrl: './markers-refills.component.html',
