@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Icons } from './spray';
-import {dataU} from '../carousel-multi-item/dataCarouseles.js'
+import {dataU} from '../carousel-multi-item-spray/dataCarouseles.js';
 @Component({
   selector: 'app-spray',
   templateUrl: './spray.component.html',

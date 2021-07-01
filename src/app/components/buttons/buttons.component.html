@@ -5,31 +5,22 @@
     <div class="col">
       <ul class="d-flex">
         <li class="mx-3 l-none mt-5" >
-          <button class="" (click)="showGraffiti()">Graffiti & Fine Art</button>
+          <button class="" (click)="showData($event)">Graffiti & Fine Art</button>
         </li>
         <li class="mx-3 l-none mt-5">
-          <button class="" (click)="showCaps()">Caps</button>
+          <button class="" (click)="showData($event)">Caps</button>
         </li>
         <li class="mx-3 l-none mt-5">
-          <button class="" (click)="showPro()">Pro</button>
+          <button class="" (click)="showData($event)">Pro</button>
         </li>
         <li class="mx-3 l-none mt-5">
-          <button class="" (click)="showLE()">Limited Edition</button>
+          <button class="" (click)="showData($event)">Limited Edition</button>
         </li>
       </ul>
     </div>
   </div>
   <div>
-    <div class="carouselGraffiti" *ngIf="isShowGraf">
-      <app-carousel-multi-item-graffiti></app-carousel-multi-item-graffiti>
-    </div>
-    <div class="carouselCaps" *ngIf="isShowCaps">
-      <app-carousel-multi-item-caps></app-carousel-multi-item-caps>
-    </div>
-    <div class="carouselPro" *ngIf="isShowPro">
-      <app-carousel-multi-item-pro></app-carousel-multi-item-pro>
-    </div>
-    <div class="carouselPro" *ngIf="isShowLE">
-      <app-carousel-multi-item-le></app-carousel-multi-item-le>
+    <div class="carouselGraffiti">
+        <app-carousel-multi-item  [data]="data"></app-carousel-multi-item>
     </div>
   </div>

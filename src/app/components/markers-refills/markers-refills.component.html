@@ -20,66 +20,18 @@
             <h1 class="h1Spray">Markers & Refills</h1>
         </div>
     </div>
-    <div class="carouseles">
+    <div class="carouseles" *ngFor="let i of data">
         <!--  TITLE  -->
         <div class="row">
             <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Markers & Dabbers</p>
+                <p class="subtitleProducts ml-3">{{i.name}}</p>
             </div>
             <div class="col d-flex text-right mt-4 justify-content-end mr-3">
                 <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
         </div>
         <div class="mb-5">
-            <app-carousel-multi-item-markers></app-carousel-multi-item-markers>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Empty</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-empty></app-carousel-multi-item-empty>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Packs</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-packs></app-carousel-multi-item-packs>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Refills</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-refills></app-carousel-multi-item-refills>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Tips</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-tips></app-carousel-multi-item-tips>
+            <app-carousel-multi-item-markers [dataM]="i.data"></app-carousel-multi-item-markers>
         </div>
     </div>
 </section>

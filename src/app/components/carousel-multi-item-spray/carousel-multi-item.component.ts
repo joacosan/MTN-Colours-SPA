@@ -1,16 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
-  selector: 'app-carousel-multi-item-markers',
-  templateUrl: './carousel-multi-item-markers.component.html',
-  styleUrls: ['./carousel-multi-item-markers.component.scss']
+  selector: 'app-carousel-multi-item',
+  templateUrl: './carousel-multi-item.component.html',
+  styleUrls: ['./carousel-multi-item.component.scss']
 })
-export class CarouselMultiItemMarkersComponent implements OnInit {
-  @Input() dataM:any;
-
+export class CarouselMultiItemComponent implements OnInit {
+  @Input() data:any;
   constructor() { }
+
   ngOnInit(): void {
-    console.log(this.dataM)
+    console.log('data',this.data)
   }
   customOptions: OwlOptions = {
     loop: true,

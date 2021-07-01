@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Icons } from './icons';
+import {dataAccesories} from '../carousel-multi-item-spray/dataCarouseles.js';
 @Component({
   selector: 'app-accessories',
   templateUrl: './accessories.component.html',
@@ -20,7 +21,10 @@ export class AccessoriesComponent implements OnInit {
      icon: '../../../assets/img/in.svg',
     }
   ]
-  constructor() { }
+  data = [];
+  constructor() { 
+    this.data = dataAccesories;
+  }
 
   ngOnInit(): void {
   }

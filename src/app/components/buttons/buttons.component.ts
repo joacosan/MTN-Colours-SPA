@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { Buttons } from './buttons';
+import {dataU, getDataById} from '../carousel-multi-item-spray/dataCarouseles.js';
+
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',
@@ -22,45 +24,18 @@ export class ButtonsComponent implements OnInit {
       btn:'Limited Edition',
       active:false,
     }
-    ];
-  constructor() { }
+    ];//yo lo traigo desde aca pero estan todos juntos mira estos son todos juntos
+    data = []
+  constructor() {
+    this.data = dataU;
+   }
 
   ngOnInit(): void {
+    console.log('dataU',this.data[0].data)
+    
   }
-  isShowGraf:boolean =true;
-  isShowCaps:boolean =false;
-  isShowPro:boolean =false;
-  isShowLE:boolean =false;
-  showGraffiti(): void {
-   this.isShowGraf = !this.isShowGraf;
-   if(this.isShowCaps === true || this.isShowPro === true || this.isShowLE === true){
-     this.isShowCaps = false;
-     this.isShowPro = false;
-     this.isShowLE = false;
-   }
+  showData(ev): void {
+    this.data = getDataById(ev.target.innerText);
+    console.log(this.data)
   }
-  showCaps(): void {
-    this.isShowCaps = !this.isShowCaps;
-    if(this.isShowGraf === true || this.isShowPro === true || this.isShowLE === true){
-      this.isShowGraf = false;
-      this.isShowPro = false;
-      this.isShowLE = false;
-    }
-   }
-   showPro(): void {
-    this.isShowPro = !this.isShowPro;
-    if(this.isShowGraf === true || this.isShowCaps === true || this.isShowLE === true){
-      this.isShowGraf = false;
-      this.isShowCaps = false;
-      this.isShowLE = false;
-    }
-   }
-   showLE(): void {
-    this.isShowLE =!this.isShowLE;
-    if(this.isShowGraf === true || this.isShowCaps === true || this.isShowPro === true){
-      this.isShowGraf = false;
-      this.isShowCaps = false;
-      this.isShowPro = false;
-    }
-   }
 }

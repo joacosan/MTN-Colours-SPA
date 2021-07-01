@@ -6,6 +6,7 @@
             <p class="font-weight-bold">| <span class="ml-1">Spray</span></p>
         </div>
         <div class="col d-flex justify-content-end mr-5 mt-3">
+            <!--  SOCIAL ICONS  -->
           <span class="font-weight-bold text-center">Share: </span>
             <ul class="list d-flex">
                 <li class="mx-2" *ngFor="let icon of icons">
@@ -14,24 +15,25 @@
             </ul>
         </div>
     </div>
-    <!--  SEE ALL -->
     <div class="row mt-1">
-        <div class="col ml-5">
+        <div class="col ml-5 mb-4">
             <h1 class="h1Spray">Spray Paint Products</h1>
         </div>
     </div>
-    <div class="carouseles"*ngFor="let i of data;index as j">
-        <!--  TITLE  -->
-        <div class="row" >
-            <div class="col ml-5 mt-5">
+    <div class="carouseles"*ngFor="let i of data">
+        <div class="row">
+            <!--  TITLE  -->
+            <div class="col ml-5">
                 <p class="subtitleProducts ml-3">{{i.name}}</p>
             </div>
+            <!--  SEE ALL -->
             <div class="col d-flex text-right mt-5 justify-content-end mr-3">
                 <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
         </div>
-        <div class="mb-5">
-            <app-carousel-multi-item [data]="i.data[j]"></app-carousel-multi-item>
+        <!--  CAROUSEL MULTI ITEM -->
+        <div>
+            <app-carousel-multi-item [data]="i"></app-carousel-multi-item>
         </div>
     </div>
 </section>

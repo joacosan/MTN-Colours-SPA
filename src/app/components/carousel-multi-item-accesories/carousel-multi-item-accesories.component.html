@@ -1,0 +1,12 @@
+<!--------------------CAROUSEL  MARKERS ----------------------------->
+<section  id="sectionCarousel" class="mt-2">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of dataA">
+        <ng-template class="owl-carousel" carouselSlide [id]="slide.h4Data">
+          <img [src]="slide.img" [alt]="slide.alt" [title]="slide.name">
+          <h5 class="font-weight-bold text-center mt-2">{{slide.h4Data}}</h5>
+          <p class="font-weight-light text-center">{{slide.pData}}</p>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </section>

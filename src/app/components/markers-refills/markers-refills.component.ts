@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Icons} from './icons'
+import {Icons} from './icons';
+import {dataMarkers} from '../carousel-multi-item-spray/dataCarouseles.js';
 @Component({
   selector: 'app-markers-refills',
   templateUrl: './markers-refills.component.html',
@@ -20,8 +21,11 @@ export class MarkersRefillsComponent implements OnInit {
      icon: '../../../assets/img/in.svg',
     }
   ]
+  data = [];
 
-  constructor() { }
+  constructor() {
+    this.data = dataMarkers;
+   }
 
   ngOnInit(): void {
   }

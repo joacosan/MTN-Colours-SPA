@@ -20,66 +20,18 @@
             <h1 class="h1Spray">Accesories</h1>
         </div>
     </div>
-    <div class="carouseles">
+    <div class="carouseles" *ngFor="let i of data">
         <!--  TITLE  -->
         <div class="row">
             <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">MTN Appareal</p>
+                <p class="subtitleProducts ml-3">{{i.name}}</p>
             </div>
             <div class="col d-flex text-right mt-4 justify-content-end mr-3">
                 <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
         </div>
         <div class="mb-5">
-            <app-carousel-multi-item-appareal></app-carousel-multi-item-appareal>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Merchandise</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-merchandise></app-carousel-multi-item-merchandise>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Protection & Safety</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-protection></app-carousel-multi-item-protection>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">MTN Books</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-mtn-books></app-carousel-multi-item-mtn-books>
-        </div>
-        <!--  TITLE  -->
-        <div class="row">
-            <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">Special Collection</p>
-            </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
-                <a class="linkViewMore" ><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
-            </div>
-        </div>
-        <div class="mb-2">
-            <app-carousel-multi-item-special></app-carousel-multi-item-special>
+            <app-carousel-multi-item-accesories [dataA]="i.data"></app-carousel-multi-item-accesories>
         </div>
     </div>
 </section>
