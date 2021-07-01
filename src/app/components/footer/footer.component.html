@@ -1,8 +1,8 @@
 <div class="footer">
   <section class="mt-5 ml-5">
     <h6 class="text-muted ml-5 my-4">VISIT OUR BLOG</h6>
-    <div class="row mt-4 d-flex flex-column flex-sm-row justify-content-around align-items-center mr-5">
-      <a class="mb-3" href="#" *ngFor="let i of imgPublicidad"><img class="tramontanaImg" [src]="i.img" alt="mtn-world-logo"></a>
+    <div class="row mt-4 d-flex text-center  flex-sm-column flex-md-row justify-content-around align-items-center mr-5">
+      <a class="mb-3 imgFather" href="#" *ngFor="let i of imgPublicidad"><img class="tramontanaImg" [src]="i.img" alt="mtn-world-logo"></a>
       <button class="btn btn-dark rounded-0 px-3">SUSCRIBE TO OUR NEWSLETTER</button>
     </div>
   </section>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="row ml-1">
-      <div class="d-flex justify-content-end  justify-md-content-start">
+      <div class="d-flex justify-sm-content-center  justify-md-content-start">
         <span *ngFor="let i of imgPagos"><img class="logos-pago" [src]="i.img" alt=""></span>
       </div>
     </div>

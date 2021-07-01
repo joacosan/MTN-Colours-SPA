@@ -4,7 +4,6 @@ main{
 }
 .subtitleProducts{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.2em;
     color: black;
 }
 .linkViewMore{
@@ -15,6 +14,52 @@ main{
     color: gray;
 }
 .h1Spray{
-    font-size: 4.5rem;
     font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    .subtitleProducts{
+        font-size: 1rem;
+        font-weight: bold;
+        color: black;
+    }
+    .h1Spray{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .subtitleProducts{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .h1Spray{
+        font-size: 3.3rem;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .subtitleProducts{
+        font-size: 1.4rem;
+        color: black;
+    }
+    .h1Spray{
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .subtitleProducts{
+        font-size: 1.6rem;
+        color: black;
+    }
+    .h1Spray{
+        font-size: 3.4rem;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .subtitleProducts{
+        font-size: 4rem;
+        color: black;
+    }
 }
