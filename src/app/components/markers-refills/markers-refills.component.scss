@@ -1,6 +1,13 @@
+*{
+    overflow: hidden;
+}
+.backToHome{
+    font-size: 1rem;
+}
 .subtitleProducts{
+    line-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 2.2rem;
     color: gray;
 }
 .linkViewMore{
@@ -11,23 +18,28 @@
     color: gray!important;
     cursor: pointer;
 }
-.h1Spray{
-    font-size: 2.7rem;
+.h1Markers{
+    font-size: 2.6rem;
     font-weight: bold;
 }
-.list {
+.listIcon {
     list-style: none;
     text-decoration: none;
 }
-.list li a img {
+.listIcon li a img {
     color: black;
     width: 20px;
     height: 20px;
 }
-.list li a img:hover {
+.listIcon li a img:hover {
     cursor: pointer;
 }
-.carouseles{
-    overflow-y: hidden;
-    overflow-x: hidden;
+@media only screen and (max-width: 600px) {
+    .h1Markers{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .backToHome{
+        font-size: 1rem;
+    }
 }

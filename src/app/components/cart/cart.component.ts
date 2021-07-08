@@ -10,6 +10,7 @@ import { Product } from '../spray-list/product';
 export class CartComponent implements OnInit {
   cartList:Product[] = [];
   total: number= 0;
+
   constructor(private cart: CartService) {
     cart.cartList.subscribe(c => this.cartList = c);
   }

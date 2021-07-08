@@ -1,35 +1,41 @@
-/* MAIN*/
+*{
+    overflow: hidden;
+}
 main{
-    font-family: 'Fjalla One', sans-serif;;
+    font-family: 'Fjalla One', sans-serif;
 }
 .subtitleProducts{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    line-height: 100%;
+    font-size: 2.2rem;
 }
 .linkViewMore{
     color: black;
 }
 .linkViewMore:hover{
     text-decoration: none;
-    color: gray;
+    color: gray!important;
+    cursor: pointer;
 }
 .h1Spray{
+    line-height: 100%;
+    font-size: 2.6em;
     font-weight: bold;
 }
+
 @media only screen and (max-width: 600px) {
-    .subtitleProducts{
-        font-size: 1rem;
-        font-weight: bold;
-        color: black;
-    }
     .h1Spray{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
+    }
+    .backToHome{
+        font-size: 1rem;
     }
 }
 @media only screen and (min-width: 600px) {
     .subtitleProducts{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: black;
     }
     .h1Spray{
@@ -39,7 +45,7 @@ main{
 }
 @media only screen and (min-width: 768px) {
     .subtitleProducts{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color: black;
     }
     .h1Spray{
@@ -49,17 +55,11 @@ main{
 }
 @media only screen and (min-width: 992px) {
     .subtitleProducts{
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: black;
     }
     .h1Spray{
-        font-size: 3.4rem;
+        font-size: 3rem;
         font-weight: bold;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .subtitleProducts{
-        font-size: 4rem;
-        color: black;
     }
 }

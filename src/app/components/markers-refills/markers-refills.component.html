@@ -1,13 +1,13 @@
  <!--  BACK TO HOME // SHARE  -->
  <section>
     <div class="row mt-3">
-        <div class="col d-flex justify-content-start ml-5 mt-3">
-            <a class="linkViewMore font-weight-bold" [routerLink]="['/home']" ><span class=""><i class="fas fa-chevron-left"></i><span class="ml-2 mr-3">Home</span></span></a>
-            <p class="font-weight-bold">| <span class="ml-1">Markers & Refills</span></p>
+        <div class="col-6 d-flex justify-content-start mt-3 ">
+            <a class="linkViewMore font-weight-bold" [routerLink]="['/home']" ><span class=""><i class="fas fa-chevron-left"></i><span class="ml-2 mr-3 backToHome">Home</span></span></a>
+            <p class="font-weight-bold backToHome">| <span class="ml-1 backToHome">Markers & Refills</span></p>
         </div>
-        <div class="col d-flex justify-content-end mr-5 mt-3">
-          <span class="font-weight-bold text-center">Share: </span>
-            <ul class="list d-flex">
+        <div class="col-6 d-flex justify-content-end mt-3">
+          <span class="font-weight-bold text-center backToHome mt-1">Share: </span>
+            <ul class="listIcon d-flex">
                 <li class="mx-2" *ngFor="let icon of icons">
                     <a><img [src]="icon.icon" [ngClass]="{'fab fa-facebook-f':icon.icon === 'fb','fab fa-twitter-square':icon.icon==='tw','fas fa-envelope':icon.icon==='mail','fab fa-linkedin-in':icon.icon ==='in'}"></a>
                 </li>
@@ -17,16 +17,16 @@
     <!--  SEE ALL -->
     <div class="row mt-1">
         <div class="col ml-5 text-left">
-            <h1 class="h1Spray">Markers & Refills</h1>
+            <h1 class="h1Markers">Markers & Refills</h1>
         </div>
     </div>
     <div class="carouseles" *ngFor="let i of data">
         <!--  TITLE  -->
         <div class="row">
             <div class="col ml-5 mt-4">
-                <p class="subtitleProducts ml-3">{{i.name}}</p>
+                <p class="subtitleProducts">{{i.name}}</p>
             </div>
-            <div class="col d-flex text-right mt-5 justify-content-end mr-3">
+            <div class="col d-flex text-right mt-4 justify-content-end mr-3">
                 <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
         </div>

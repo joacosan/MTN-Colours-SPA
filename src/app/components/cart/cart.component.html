@@ -1,18 +1,18 @@
-<section class="mx-5">
+<section class="mx-auto">
     <div class="d-flex justify-content-center my-5">
         <h2>Shopping cart</h2>
     </div>
     <table class="table table-striped table-bordered table-hover">
         <thead>
-            <th class="img">Products</th>
+            <th>Products</th>
             <th>Price</th>
             <th>Amount</th>
             <th>Total</th>
         </thead>
         <tbody>
             <tr *ngFor="let product of cartList">
-                <td class="img d-flex ">
-                    <div><img width="70" class="img-thumbnail img" [src]="product.img" [alt]=""></div>
+                <td class="d-flex ">
+                    <div class="img"><img width="70" class="img-thumbnail img" [src]="product.img" [alt]=""></div>
                     <div class="ml-3 w-50 font-weight-bold ml-4 d-flex flex-column">
                         {{product.name}}
                         <button class="btn btn-light btn-sm w-25" (click)="deleteToCart(product)">Delete</button>
@@ -21,7 +21,7 @@
                 <td>{{product.price | currency}}</td>
                 <td>{{product.quantity}}</td>
                 <td>
-
+                    {{product.price * product.quantity | currency}}
                 </td>
             </tr>
         </tbody>

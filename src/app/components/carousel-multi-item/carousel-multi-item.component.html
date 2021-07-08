@@ -2,7 +2,7 @@
   <owl-carousel-o [options]="customOptions">
     <ng-container *ngFor="let slide of data.data">
       <ng-template carouselSlide [id]="slide.h4Data">
-        <img [src]="slide.img" [alt]="slide.h4Data" [title]="">
+        <img class="img-hover" [src]="slide.img" [alt]="slide.h4Data" [title]="">
         <h5 class="font-weight-bold text-center mt-2">{{slide.h4Data}}</h5>
         <p class="font-weight-light text-center">{{slide.pData}}</p>
       </ng-template>

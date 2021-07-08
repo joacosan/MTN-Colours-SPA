@@ -11,12 +11,12 @@
       <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let i of carouselItem" [ngClass]="{'active': i.active == true }">
           <img class="d-block w-100 img-fluid" [src]="i.img" alt="image carousel">
-          <div class="carousel-caption oneCaption text-left d-none d-md-block">
+          <div class="carousel-caption oneCaption text-left d-none d-md-block ml-5">
             <div class="w-50 head">
               <h4 class="text-light">{{i.h4Data}}</h4>
             </div>
             <div class="body">
-              <h1 class="">{{i.h1Data}}</h1>
+              <h1 class="my-4">{{i.h1Data}}</h1>
               <button class="btn btn-outline-light btn-lg font-weight-bold w-50">{{i.buttonData}}</button>
             </div>
           </div>

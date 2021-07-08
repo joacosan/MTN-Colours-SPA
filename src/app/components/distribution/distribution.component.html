@@ -1,1 +1,8 @@
-<p>distribution works!</p>
+<div class="container-fluid ml-4 mt-4">
+    <div class="row d-flex flex-column text-left mx-auto mt-5" *ngFor="let data of textData">
+        <h5>{{data.h5Data}}</h5>
+        <h1 class="my-4">{{data.h1Data}}</h1>
+        <p class="my-3">{{data.pData}}</p>
+        <button class="btn btn-outline-dark btn-lg p-2 my-3 text-uppercase font-weight-bold">{{data.buttonData}}</button>
+    </div>
+</div>

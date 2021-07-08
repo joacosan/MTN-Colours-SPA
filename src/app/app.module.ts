@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,7 +50,8 @@ import { CarouselMultiItemComponent } from './components/carousel-multi-item/car
     AppRoutingModule,
     FormsModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
