@@ -9,39 +9,15 @@ import { SprayComponent } from './components/spray/spray.component';
 import { StoreComponent } from './components/store/store.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    redirectTo:'home',
-    pathMatch:'full'
-  },
-  {
-    path:'home',
-    component: HomeComponent
-  },
-  {
-    path:'spray',
-    component: SprayComponent
-  },
-  {
-    path:'markers&refills',
-    component: MarkersRefillsComponent
-  },
-  {
-    path:'accessories',
-    component: AccessoriesComponent
-  },
-  {
-    path:'distribution',
-    component: DistributionComponent
-  },
-  {
-    path:'store',
-    component: StoreComponent
-  },
-  {
-    path:'cart',
-    component:CartComponent
-  }
+  {  path:'', redirectTo:'home', pathMatch:'full' },
+  {  path:'home', component: HomeComponent  },
+  {  path:'spray', component: SprayComponent },
+  {  path:'markers&refills', component: MarkersRefillsComponent },
+  {  path:'accessories', component: AccessoriesComponent },
+  {  path:'distribution', component: DistributionComponent },
+  {  path:'store', component: StoreComponent },
+  {  path:'cart', component: CartComponent },
+  {  path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({

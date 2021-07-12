@@ -1,31 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-light p-0 bg-light">
-    <a class="navbar-brand ml-4" href="index.html"><span><img class="logo" src="../../../assets/img/logo.svg" alt=""></span></a>
+    <a class="navbar-brand ml-4" (click)="goTo('')" href=""><span><img class="logo" src="../../../assets/img/logo.svg" alt=""></span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <div class="collapse navbar-collapse w-100 ml-5" id="navbarSupportedContent">
       <ul class="navbar-nav text-center mx-auto">
-        <li class="nav-item mx-2 active">
-          <a class="nav-link py-3 link-spray font-weight-bold pb-2" [routerLink]="['/spray']">{{dataLink[0].nameLink}}</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link py-3 link-markers font-weight-bold pb-2" [routerLink]="['/markers&refills']">{{dataLink[1].nameLink}}</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link py-3 link-accessories font-weight-bold pb-2" [routerLink]="['/accessories']">{{dataLink[2].nameLink}}</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link py-3 link-distribution font-weight-bold pb-2" [routerLink]="['/distribution']">{{dataLink[3].nameLink}}</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link py-3 link-store font-weight-bold pb-2" [routerLink]="['/store']">{{dataLink[4].nameLink}}</a>
+        <li class="nav-item mx-2 active" *ngFor="let link of dataLink">
+          <a class="nav-link py-3 link-spray font-weight-bold pb-2" [routerLink]="['/'+goTo(link.nameLink)]">{{link.nameLink}}</a>
         </li>
       </ul>
       <div class="ml-5 w-100">
         <form class="form-inline my-2 my-lg-0 d-flex">
           <input class="form-control w-50 mr-1" type="search" placeholder="Buscar: " aria-label="Search">
-          <button class="search btn btn-outline-orange my-2 my-sm-0 "><span><i class="fas fa-search"></i></span></button>
-          <button class="search btn btn-outline my-2 my-sm-0 mx-1" [routerLink]="['/cart']"><span matBadge =""><i class="fas fa-shopping-cart"></i></span></button>
+          <button class="search btn btn-outline-orange my-2 my-sm-0 ">
+            <span><i class="fas fa-search"></i></span>
+          </button>
+          <button class="search btn btn-outline my-2 my-sm-0 mx-1"
+           [routerLink]="['/cart']">
+           <span [matBadge] ="size === 0 ? null : size">
+             <i class="fas fa-shopping-cart"></i>
+            </span>
+          </button>
         </form>
     </div>
   </div>

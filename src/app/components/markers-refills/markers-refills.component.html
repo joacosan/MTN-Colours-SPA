@@ -20,18 +20,18 @@
             <h1 class="h1Markers">Markers & Refills</h1>
         </div>
     </div>
-    <div class="carouseles" *ngFor="let i of data">
+    <div class="carouseles" *ngFor="let item of data">
         <!--  TITLE  -->
         <div class="row">
             <div class="col ml-5 mt-4">
-                <p class="subtitleProducts">{{i.name}}</p>
+                <p class="subtitleProducts">{{item.name}}</p>
             </div>
             <div class="col d-flex text-right mt-4 justify-content-end mr-3">
                 <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
         </div>
         <div class="mb-5">
-            <app-carousel-multi-item [data]="i"></app-carousel-multi-item>
+            <app-carousel-multi-item [data]="item"></app-carousel-multi-item>
         </div>
     </div>
 </section>

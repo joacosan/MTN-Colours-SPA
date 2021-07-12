@@ -18,6 +18,7 @@ export class CartComponent implements OnInit {
   deleteToCart(product:Product){
     const newArray = this.cartList.filter(v => v !== product);
     this.cartList = newArray;
+    this.cart.deleteProduct(product);
     this.total =  this.total - (product.price * product.quantity);
   }
   productsTotal(cartList: Product[], product: any) {

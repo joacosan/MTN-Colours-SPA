@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('shop',this.data)
+    //console.log('shop',this.data)
   }
 
 }

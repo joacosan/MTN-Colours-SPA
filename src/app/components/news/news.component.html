@@ -2,24 +2,24 @@
       <section class="newsSection mx-auto">
         <div class="row">
           <div class="card-group text-center">
-            <div class="card m-3" *ngFor="let i of card">
-              <img class="card-img-top h-75" [src]="i.img" alt="Card image cap">
+            <div class="card m-3" *ngFor="let item of card">
+              <img class="card-img-top h-75" [src]="item.img" alt="Card image cap">
               <div class="card-body">
-                <h4 class="card-title font-weight-bold">{{i.h4Data}}<span class="border-bottom border-dark">{{i.spanData}}</span></h4>
-                <p class="card-text font-weight-light">{{i.pData}}</p>
-                <button class="btn-lg btn-outline-dark font-weight-bold px-5">{{i.buttonData}}</button>
+                <h4 class="card-title font-weight-bold">{{item.h4Data}}<span class="border-bottom border-dark">{{item.spanData}}</span></h4>
+                <p class="card-text font-weight-light">{{item.pData}}</p>
+                <button class="btn-lg btn-outline-dark font-weight-bold px-5">{{item.buttonData}}</button>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="card-group text-center">
-            <div class="card m-3" *ngFor="let i of card1">
-              <img class="card-img-top h-75" [src]="i.img">
+            <div class="card m-3" *ngFor="let item of card1">
+              <img class="card-img-top h-75" [src]="item.img">
               <div class="card-body">
-                <h4 class="card-title font-weight-bold">{{i.h4Data}}</h4>
-                <p class="card-text">{{i.pData}}</p>
-                <button class="btn-lg btn-outline-dark font-weight-bold px-5">{{i.buttonData}}</button>
+                <h4 class="card-title font-weight-bold">{{item.h4Data}}</h4>
+                <p class="card-text">{{item.pData}}</p>
+                <button class="btn-lg btn-outline-dark font-weight-bold px-5">{{item.buttonData}}</button>
               </div>
             </div>
           </div>

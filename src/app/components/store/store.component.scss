@@ -1,3 +1,6 @@
+*{
+    overflow: hidden;
+  } 
 .subtitleProducts{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -30,4 +33,13 @@
 .carouseles{
     overflow-y: hidden;
     overflow-x: hidden;
+}
+@media only screen and (max-width: 600px) {
+    .h1Spray{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .backToHome{
+        font-size: 1rem;
+    }
 }
