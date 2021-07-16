@@ -3,18 +3,14 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="collapse navbar-collapse w-100 ml-5" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
       <ul class="navbar-nav text-center mx-auto">
         <li class="nav-item mx-2 active" *ngFor="let link of dataLink">
           <a class="nav-link py-3 link-spray font-weight-bold pb-2" [routerLink]="['/'+goTo(link.nameLink)]">{{link.nameLink}}</a>
         </li>
       </ul>
-      <div class="ml-5 w-100">
-        <form class="form-inline my-2 my-lg-0 d-flex">
-          <input class="form-control w-50 mr-1" type="search" placeholder="Buscar: " aria-label="Search">
-          <button class="search btn btn-outline-orange my-2 my-sm-0 ">
-            <span><i class="fas fa-search"></i></span>
-          </button>
+      <div class="mr-5">
+        <form class="form-inline my-2 my-lg-0">
           <button class="search btn btn-outline my-2 my-sm-0 mx-1"
            [routerLink]="['/cart']">
            <span [matBadge] ="size === 0 ? null : size">

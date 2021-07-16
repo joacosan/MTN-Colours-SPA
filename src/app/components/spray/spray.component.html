@@ -1,32 +1,19 @@
   <!--  BACK TO HOME // SHARE  -->
   <section>
-    <div class="row mt-3">
-        <div class="col-6 d-flex justify-content-start mt-3 ">
-            <a class="linkViewMore font-weight-bold" [routerLink]="['/home']" ><span class=""><i class="fas fa-chevron-left"></i><span class="ml-2 mr-3 backToHome">Home</span></span></a>
-            <p class="font-weight-bold backToHome">| <span class="ml-1 backToHome">Spray</span></p>
-        </div>
-        <div class="col-6 d-flex justify-content-end mt-3">
-          <span class="font-weight-bold text-center backToHome mt-1">Share: </span>
-            <ul class="listIcon d-flex">
-                <li class="mx-2" *ngFor="let icon of icons">
-                    <a><img [src]="icon.icon" [ngClass]="{'fab fa-facebook-f':icon.icon === 'fb','fab fa-twitter-square':icon.icon==='tw','fas fa-envelope':icon.icon==='mail','fab fa-linkedin-in':icon.icon ==='in'}"></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+   <app-back-to-home-and-share></app-back-to-home-and-share>
     <div class="row mt-1">
-        <div class="col ml-4     mb-4">
+        <div class="col ml-4 mb-4">
             <h1 class="h1Latas">Spray Paint Products</h1>
         </div>
     </div>
     <div class="carouseles"*ngFor="let i of data">
         <div class="row">
             <!--  TITLE  -->
-            <div class="col ml-4 mt-4 ">
+            <div class="col ml-4 mt-4">
                 <p class="subtitleProducts">{{i.name}}</p>
             </div>
             <!--  SEE ALL -->
-            <div class="col d-flex text-right mt-4 justify-content-end mr-3">
+            <div class="col d-flex text-right justify-content-end mt-5 mr-4">
                 <a class="linkViewMore"><span>See All <i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
         </div>

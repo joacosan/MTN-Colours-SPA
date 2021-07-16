@@ -98,12 +98,5 @@ export class SprayListComponent implements OnInit {
       quantity:0,
     },
   ]
-  addToCart(list:Product):void {
-    this.cart.addToCart(list);
-    list.stock -= list.quantity;
-    list.quantity = 0;//se reinicia a 0 para la siguiente compra. (habria que charlarlo con el cliente)
-  }
-  maxReached(m:string){
-    alert(m);
-  }
+  
 }

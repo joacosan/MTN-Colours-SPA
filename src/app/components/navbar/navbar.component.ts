@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit , OnDestroy {
       nameLink:'Distribution',
     },
     {
-      nameLink:'store',
+      nameLink:'Store',
     },
   ]
   size: number;

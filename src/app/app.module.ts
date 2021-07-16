@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +25,9 @@ import { SprayListComponent } from './components/spray-list/spray-list.component
 import { InputIntegerComponent } from './components/input-integer/input-integer.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CarouselMultiItemComponent } from './components/carousel-multi-item/carousel-multi-item.component';
+import { BackToHomeAndShareComponent } from './components/back-to-home-and-share/back-to-home-and-share.component';
+import { ListProductsComponent } from './components/list-products/list-products.component';
+
 
 
 @NgModule({
@@ -44,6 +49,8 @@ import { CarouselMultiItemComponent } from './components/carousel-multi-item/car
     InputIntegerComponent,
     CartComponent,
     CarouselMultiItemComponent,
+    BackToHomeAndShareComponent,
+    ListProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +59,8 @@ import { CarouselMultiItemComponent } from './components/carousel-multi-item/car
     CarouselModule,
     BrowserAnimationsModule,
     MatBadgeModule,
+    MatInputModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

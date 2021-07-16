@@ -18,10 +18,10 @@
                 <td>{{spray.price | currency}}</td>
                 <td><span class="badge badge-warning" *ngIf="spray.stock == 0">SIN STOCK</span><span class="badge badge-success" *ngIf="spray.stock > 0">STOCK</span></td>
                 <td>
-                   <app-input-integer [(quantity)]="spray.quantity" [max]="spray.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                  <!--<app-input-integer [(quantity)]="spray.quantity" [max]="spray.stock" (maxReached)="maxReached($event)"></app-input-integer>-->
                 </td>
                 <td>
-                    <button class="btn btn-primary btn-sm w-100" (click)="addToCart(spray)">Add</button>
+                    <!---->
                 </td>
             </tr>
         </tbody>

@@ -1,0 +1,32 @@
+.linkViewMore{
+    font-size: 1rem;
+    color: black;
+}
+.backToHome{
+    font-size: 1rem;
+}
+.linkViewMore:hover{
+    text-decoration: none;
+    color: gray!important;
+    cursor: pointer;
+}
+.listIcon {
+    list-style: none;
+    text-decoration: none;
+}
+.listIcon li a img {
+    color: black;
+    width: 20px;
+    height: 20px;
+}
+.listIcon li a img:hover {
+    cursor: pointer;
+}
+.row .col-6{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .backToHome{
+        font-size: 1rem;
+    }
+}

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Icons} from './icons';
 import {dataMarkers} from '../carousel-multi-item/dataCarouseles.js';
 @Component({
   selector: 'app-markers-refills',
@@ -7,20 +6,6 @@ import {dataMarkers} from '../carousel-multi-item/dataCarouseles.js';
   styleUrls: ['./markers-refills.component.scss']
 })
 export class MarkersRefillsComponent implements OnInit {
-  icons:Icons[] = [
-    {
-      icon: '../../../assets/img/facebook.svg',
-    },
-    {
-      icon:'../../../assets/img/twitter.svg',
-    },
-    {
-      icon: '../../../assets/img/envelope.svg',
-    },
-    {
-     icon: '../../../assets/img/in.svg',
-    }
-  ]
   data = [];
 
   constructor() {
