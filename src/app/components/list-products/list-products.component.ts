@@ -100,9 +100,9 @@ const ELEMENT_DATA: Product[] = [
   {img:'../../../../assets/img/carouselMarkers&Refills/Refills/3.jpg',name: 'Street Ink Refills',type: 'Refills',price: 3.50,stock: 500,clearance: true,quantity:0,},
   {img:'../../../../assets/img/carouselMarkers&Refills/Refills/4.jpg',name: 'MTN Liquid',type: 'Refills',price: 3.50,stock: 300,clearance: false,quantity:0,},
 
-  {img:'../../../../assets/img/carouselMarkers&Refills/Tips/1',name: 'Markers',type: 'Empty',price: 3.00,stock: 300,clearance: false,quantity:0,},
+  {img:'../../../../assets/img/carouselMarkers&Refills/Tips/1.jpg',name: 'Markers',type: 'Empty',price: 3.00,stock: 300,clearance: false,quantity:0,},
   {img:'../../../../assets/img/carouselMarkers&Refills/Tips/2.jpg',name: 'DABBERS TIPS',type: 'Empty',price: 4.00,stock: 500,clearance: false,quantity:0,},
-  {img:'../../../../assets/img/carouselMarkers&Refills/Tips/3',name: '94 Graphic Markers Tips',type: ' Empty',price: 3.50,stock: 500,clearance: true,quantity:0,},
+  {img:'../../../../assets/img/carouselMarkers&Refills/Tips/3.jpg',name: '94 Graphic Markers Tips',type: ' Empty',price: 3.50,stock: 500,clearance: true,quantity:0,},
 
   {img:'../../../assets/img/carouselOnlineShop/8.jpg',name: 'MTN SOCKS',type: 'Empty',price: 3.00,stock: 300,clearance: false,quantity:0,},
   {img:'../../../assets/img/carouselOnlineShop/bag.jpg',name: 'Accesories',type: 'Empty',price: 4.00,stock: 500,clearance: false,quantity:0,},
