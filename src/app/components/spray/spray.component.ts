@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {dataU} from '../carousel-multi-item/dataCarouseles.js';
+import { dataU } from '../carousel-multi-item/dataCarouseles.js';
 @Component({
   selector: 'app-spray',
   templateUrl: './spray.component.html',

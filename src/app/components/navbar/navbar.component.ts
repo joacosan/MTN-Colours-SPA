@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { CartService } from 'src/app/cart.service';
+import { CartService } from '../../cart.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
